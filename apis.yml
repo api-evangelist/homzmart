@@ -1,7 +1,29 @@
 aid: homzmart
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/homzmart.png
 name: Homzmart
-description: Homzmart is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Homzmart is a Cairo, Egypt-based online marketplace for furniture, home decor,
+  appliances, and workspace products that connects thousands of local
+  manufacturers, brands, and merchants with consumers across Egypt and the wider
+  MENA region. Founded in 2019 by Mahmoud Ibrahim and Ibrahim Mohamed, the
+  platform lists more than 55,000 products and layers in flexible financing,
+  delivery, and assembly services. Homzmart runs consumer web and mobile
+  storefronts alongside merchant-facing "Sell With Us" and "Homzmart For
+  Business" programs, and has raised roughly $40M in venture funding including a
+  $15M Series A, with 500 Global among its backers. No public developer API
+  program, SDK, or API documentation was found during enrichment; the company
+  publishes a vulnerability-disclosure page and standard trust/policy pages.
 url: https://raw.githubusercontent.com/api-evangelist/homzmart/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- E-commerce
+- Furniture
+- Marketplace
+- Home Goods
+- Retail
+- MENA
+- Egypt
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/homzmart-vulnerability-disclosure.yml
+- type: Security
+  url: security/homzmart-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/homzmart-domain-security.yml
 - type: Website
   url: https://homzmart.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
